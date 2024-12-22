@@ -5,7 +5,7 @@ test('ID-0000001 Check successful login', async ({ page }) => {
   const login = new loginPage(page);
 
   await login.navigate(); 
-  await login.login('1193345034', 'Deltec8001661991*'); 
+  await login.login('---', '---'); 
 
   await expect(page).toHaveURL(/dashboard/);
 });
